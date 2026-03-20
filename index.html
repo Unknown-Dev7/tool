@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Franz Ireng - Developer Tools</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+        
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #ffffff;
+            color: #1a1a1a;
+        }
+
+        .tool-card {
+            border: 1px solid #f0f0f0;
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        .tool-card:hover {
+            transform: translateY(-8px);
+            border-color: #3b82f6;
+            box-shadow: 0 30px 60px -12px rgba(59, 130, 246, 0.12);
+        }
+
+        .fb-btn {
+            background-color: #1877F2;
+            transition: all 0.3s ease;
+        }
+
+        .fb-btn:hover {
+            opacity: 0.9;
+            transform: translateY(-1px);
+        }
+
+        .bg-grid {
+            background-size: 30px 30px;
+            background-image: radial-gradient(circle, #e5e7eb 1px, rgba(0,0,0,0) 1px);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col bg-grid">
+
+    <!-- Navigasi Utama -->
+    <nav class="sticky top-0 z-50 bg-white/70 backdrop-blur-lg border-b border-gray-100 py-5 px-6 md:px-16 flex justify-between items-center">
+        <div class="flex items-center gap-3">
+            <div class="w-10 h-10 bg-black rounded-xl flex items-center justify-center text-white font-bold text-xl">
+                FI
+            </div>
+            <span class="font-bold text-xl tracking-tight">Franz Ireng</span>
+        </div>
+
+        <div class="flex items-center gap-6">
+            <a href="https://www.facebook.com/Franzxz0" target="_blank" class="fb-btn text-white px-6 py-2.5 rounded-full text-sm font-bold flex items-center gap-2 shadow-lg shadow-blue-200">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
+                <span class="hidden sm:inline">Profil Facebook</span>
+                <span class="sm:hidden">FB</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Bagian Hero -->
+    <header class="py-24 px-6 text-center max-w-5xl mx-auto">
+        <div class="inline-block px-4 py-1.5 mb-6 bg-blue-50 text-blue-600 rounded-full text-xs font-bold tracking-widest uppercase">
+            Pusat Alat Digital Gratis
+        </div>
+        <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-8">
+            Dibuat Oleh <span class="text-blue-600 italic">Franz Ireng</span>.
+        </h1>
+        <p class="text-gray-500 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
+            Kumpulan aplikasi web sederhana untuk membantu pekerjaan digital Anda sehari-hari. Cepat, bersih, dan tanpa iklan.
+        </p>
+    </header>
+
+    <!-- Daftar Tool -->
+    <main id="tools" class="max-w-6xl mx-auto w-full px-6 pb-32">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
+            
+            <!-- Tool QR (DIUBAH DI SINI SAJA) -->
+            <a href="./qrcode/qr.html" class="tool-card bg-white p-8 rounded-[2.5rem] group flex flex-col">
+                <div class="w-16 h-16 bg-gray-50 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600 group-hover:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h.01M5 8h2a1 1 0 001-1V5a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1zm12 0h2a1 1 0 001-1V5a1 1 0 00-1-1h-2a1 1 0 00-1 1v2a1 1 0 001 1zM5 20h2a1 1 0 001-1v-2a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1z" />
+                    </svg>
+                </div>
+
+                <!-- INI YANG DIGANTI -->
+                <h3 class="text-2xl font-bold mb-3 tracking-tight text-gray-800">
+                    QRWIR-JAWIRR
+                </h3>
+
+                <p class="text-gray-500 text-sm leading-relaxed mb-10 flex-grow">
+                    Hasilkan kode QR berkualitas tinggi secara instan dari teks atau tautan apa pun. Gratis dan sangat mudah digunakan.
+                </p>
+
+                <div class="flex items-center gap-2 text-blue-600 font-bold group-hover:gap-4 transition-all uppercase text-xs tracking-widest">
+                    Buka Aplikasi <span>→</span>
+                </div>
+            </a>
+
+            <!-- Placeholder -->
+            <div class="border-2 border-dashed border-gray-200 bg-gray-50/50 p-8 rounded-[2.5rem] flex flex-col items-center justify-center text-center opacity-60">
+                <div class="w-16 h-16 bg-white border border-gray-100 rounded-2xl flex items-center justify-center mb-6 shadow-sm text-gray-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                    </svg>
+                </div>
+                <h3 class="text-gray-400 font-bold text-lg mb-1 uppercase tracking-wider">Tool Baru</h3>
+                <p class="text-gray-300 text-xs">UTIWI FITUR BARU</p>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-auto py-12 bg-white border-t border-gray-100">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="text-center md:text-left">
+                <p class="font-extrabold text-xl mb-1 text-gray-900">Franz Ireng</p>
+                <p class="text-gray-400 text-xs font-medium uppercase tracking-[0.2em]">Independent Developer</p>
+            </div>
+            
+            <div class="flex items-center gap-10">
+                <a href="https://www.facebook.com/Franzxz0" target="_blank" class="text-gray-500 hover:text-blue-600 font-bold text-sm transition-colors uppercase tracking-wider">Facebook</a>
+                <a href="#" class="text-gray-500 hover:text-blue-600 font-bold text-sm transition-colors uppercase tracking-wider">Tentang Saya</a>
+            </div>
+        </div>
+        
+        <div class="text-center mt-12">
+            <p class="text-gray-300 text-[10px] font-bold uppercase tracking-[0.3em]">
+                &copy; 2025 Proyek Milik Franz Ireng(RAJA SIKMA)
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
